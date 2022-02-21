@@ -1,9 +1,12 @@
 import React from "react";
 
-export const PokemonList = () => {
+export const PokemonList = ({ pokemon }) => {
+    
     return (
-        <div>
-            
+        <div onClick={console.log('haha')}>
+            {pokemon.map(p => (
+                <div key={p}>{p}</div>
+            ))}
         </div>
     );
 };
